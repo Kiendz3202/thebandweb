@@ -1,0 +1,422 @@
+/*reset css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/*
+từ ngoài vào trong,từ trên xuống dưới,tổng quan đến chi tiết
+
+1,vị trí
+2.màu sắc
+3.kích thước
+4.kiểu dáng(hình tròn,vuong?)
+*/
+.row{
+    margin: 0 -8px;
+}
+.col{
+    float: left;
+    padding: 0 8px;
+}
+.col-half{
+    width: 50%;
+
+}
+.col-full{
+    width: 100%;
+}
+.mt8{
+    margin-top: 8px;
+}
+.mt16{
+    margin-top: 16px;
+}
+#main{
+
+}
+
+
+
+#header{
+    width: 100vw;
+    height: 46px;
+    background-color:black ;
+    position: fixed;
+    top:0;
+    z-index: 1;
+
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav >li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav> li:hover> a{
+    background-color: #ccc;
+    color:black;
+}
+
+#nav .subnav li:hover a{
+    background-color: #ccc;
+    color:black;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav >li>a{
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+#nav .subnav{
+    position: absolute;
+
+}
+
+#nav .subnav {
+    list-style-type: none;
+    background-color: white;
+    color: black;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 12px;
+    line-height: 28px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+    
+}
+
+#header .search-btn{
+    float:right;
+    padding:0 21px;
+    
+}
+
+#header .search-btn:hover{
+     background-color: #f44336;
+     cursor: pointer; 
+}
+
+#header .search-icon{
+    font-size:20px ;
+    color:white;
+    line-height: 46px;
+}
+
+
+
+#slider{
+ padding-top: 50%;
+ margin-top: 46px;
+ background-image: url(/assets/img/img1.jpg) ;
+ background-position: top center;
+ background-size:cover ;
+ position: relative;
+}
+
+#slider .text-content{
+position: absolute;
+bottom: 48px;
+color: aliceblue;
+text-align:center ;
+left: 50%;
+transform: translateX(-50%);
+}
+#slider .text-heading{
+
+}
+#slider .text-description{
+margin-top: 25px;
+}
+
+#content{
+    
+    
+
+    
+}
+
+#content .content-section{
+    
+    width: 736px;
+    height: 540px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+    margin-bottom: 30px;
+
+}
+
+#content .section-heading{
+    line-height: 45px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+#content .section-sub-heading{
+    line-height: 22px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #ccc;
+}
+
+#content .about-text{
+    
+    
+    font-size: 15px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100% / 3);
+    margin-top: 47px;
+}
+
+#content .member-name{
+    margin: 15px 0;
+}
+
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+#tour{
+    width: 100%;
+    height: 840px;
+    background-color: #333;
+}
+
+#tour .tour-content{
+   width: 768px;
+   height: 714px;
+   padding: 64px 16px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+#tour .tour-head{
+    line-height: 45px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#tour .tour-slogan{
+    line-height: 22px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #ccc;
+    text-align: center;
+}
+#tour .tickets{
+    list-style: none;
+    background-color: white;
+    
+
+}
+ .tickets li{
+    padding: 8px 16px;
+    margin-bottom: 1px;
+    border-bottom:1px solid #ccc;
+    color: #757575;
+    
+    
+}
+.tickets .sold-out{
+    background-color: #f44336;
+    color: white;
+    padding: 0 8px;
+    margin: 0 16px;
+}
+#tour .quantity{
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 50%;
+    padding: 0 8px;
+    margin-right: 16px;
+}
+#tour .tour-place{
+    padding: 32px 0;
+    display: inline-block;
+    margin: 0 -8px;
+}
+#tour .place{
+    
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 8px;
+    
+}
+#tour .tour-img{
+    width: 100%;
+    display: block;
+    
+}
+#tour .tour-img:hover{
+    opacity: 0.6;
+}
+#tour .place-body{
+    background-color: white;
+    padding: 0 16px;
+}
+#tour .head-place{
+    margin:15px 0;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22.5px;
+    font-weight: bolder;
+}
+#tour .tour-time{
+    margin-bottom: 15px;
+    color: #757575;
+    font-style: italic;
+    font-size: 15px;
+}
+#tour .tour-text{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+#tour .buy-tickets{
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    border-radius:50%;
+}
+#tour .buy-tickets:hover{
+    background-color: #ccc;
+    color: black;
+    
+}
+#contact .contact-child{
+    width: 768px;
+    height: 457px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact .contact-head{
+    line-height: 45px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+#contact .contact-slogan{
+    line-height: 22px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #ccc;
+    text-align: center;
+}
+#contact .body{
+    padding: 32px 0;
+}
+ .body .fa-map-marker{
+    width: 30px;        
+}
+
+.body .fa-phone{
+    width: 30px;
+}
+.body .fa-envelope{
+    width: 25px;
+}
+#contact .how-to-contact{
+    font-size: 18px;
+    line-height: 1.5;
+}
+#contact .contact-send{
+    font-size: 15px;
+}
+#contact .contact-send .form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    
+    
+}
+.row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+#contact .send-infor{
+    
+    
+}
+#contact .form-control{
+    
+}
+#contact .form-send-last{
+    background-color: #000000;
+    color: white;
+    padding: 8px 16px;
+    float: right;
+    font-size: 15px;
+    border: none;
+    
+}
+#contact .form-send-last:hover{
+    background-color: #ccc;
+    color: black;
+}
+#map .map-img{
+    filter: grayscale(50%);
+}
+#footer{
+
+}
+#footer .footer-icon{
+    text-align: center;
+    font-size: larger;
+    padding: 64px 16px;
+}
+#footer .footer-slogan{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#footer .footer-link{
+    background-color: #ccc;
+    display: inline-block;
+    color: #333;
+    border-radius: 10px;
+}
